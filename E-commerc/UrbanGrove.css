@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Urbanist:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500&display=swap');
+
+
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+    background-color: #1E1E1E;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1E1E1E;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'PT Serif', serif;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 24px;
+    background: linear-gradient(to right, #738F60, #1E1E1E);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: colorChange 2s linear infinite;
+    background-size: 200% 100%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    font-family: 'Urbanist', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #738F60;
+}
+
+
+@keyframes colorChange {
+    0% {
+        background-position: 100% 0;
+    }
+
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+.intro {
+    text-align: center;
+    background-color: #111;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+.intro-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-text {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+}
+
+.intro-image {
+    flex: 1;
+    text-align: center;
+}
+
+.intro h2 {
+    color: #333;
+}
+
+.intro-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease-in-out;
+}
+
+.intro-image img:hover {
+    transform: translateX(20px);
+}
+
+
+.intro h2 {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 36px;
+    color: #FFFF;
+    font-weight: 15400;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, #4bc427, #1E1E1E, #ffffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: colorChange 2s linear infinite;
+    background-size: 200% 100%;
+}
+
+
+.intro p {
+    font-family: 'PT Serif', serif;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #1E1E1E;
+    line-height: 1.5;
+    background: linear-gradient(to right, #ffffff, #1E1E1E);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: colorChange 2s linear infinite;
+    background-size: 200% 100%;
+}
+
+.custom-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    background-color: #425c30;
+    color: #fff;
+}
+
+.custom-button:hover {
+    background-color: #1E1E1E;
+    color: #fff;
+}
+
+/* Estilos comuns para todos os dispositivos */
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+    background-color: #1E1E1E;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1E1E1E;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'PT Serif', serif;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 24px;
+    background: linear-gradient(to right, #738F60, #1E1E1E);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: colorChange 2s linear infinite;
+    background-size: 200% 100%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    font-family: 'Urbanist', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #738F60;
+}
+
+@keyframes colorChange {
+    0% {
+        background-position: 100% 0;
+    }
+
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+.intro {
+    text-align: center;
+    background-color: #111;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+.intro-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.intro-text {
+    text-align: center; 
+    padding: 0 20px; 
+}
+
+.intro-image {
+    text-align: center;
+}
+
+.intro h2 {
+    color: #fff;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 28px; 
+    margin-bottom: 10px;
+    background: linear-gradient(to right, #4bc427, #1E1E1E, #ffffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: colorChange 2s linear infinite;
+    background-size: 200% 100%;
+}
+
+.intro p {
+    font-family: 'PT Serif', serif;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 16px; 
+    font-weight: bold;
+    color: #fff;
+    line-height: 1.5;
+    margin-top: 10px; 
+}
+
+.custom-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    background-color: #425c30;
+    color: #fff;
+}
+
+.custom-button:hover {
+    background-color: #1E1E1E;
+    color: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 90%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .nav-links li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .custom-button {
+        width: 100%;
+    }
+
+    .intro {
+        padding: 20px;
+    }
+}
